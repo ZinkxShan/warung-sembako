@@ -81,6 +81,18 @@
                             <i class="bi bi-box-seam"></i> Kelola Produk
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('bon.index') || request()->routeIs('bon.*') ? 'active' : '' }}"
+                           href="{{ route('bon.index') }}">
+                            <i class="bi bi-receipt"></i> Bon Hutang
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('bon.riwayat') ? 'active' : '' }}"
+                           href="{{ route('bon.riwayat') }}">
+                            <i class="bi bi-clock-history"></i> Riwayat
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

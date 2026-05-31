@@ -42,8 +42,6 @@ class ProdukController extends Controller
             'nama_produk' => 'required|string|max:255',
             'kategori'    => 'required|string|max:255',
             'harga'       => 'required|numeric|min:0',
-            'stok'        => 'required|integer|min:0',
-            'satuan'      => 'required|string|max:50',
         ]);
 
         Produk::create($request->all());
@@ -65,8 +63,6 @@ class ProdukController extends Controller
             'nama_produk' => 'required|string|max:255',
             'kategori'    => 'required|string|max:255',
             'harga'       => 'required|numeric|min:0',
-            'stok'        => 'required|integer|min:0',
-            'satuan'      => 'required|string|max:50',
         ]);
 
         $produk->update($request->all());

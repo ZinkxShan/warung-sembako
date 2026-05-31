@@ -54,14 +54,8 @@
                     <h6 class="fw-bold mb-1" style="color: #1f2937;">
                         {{ $produk->nama_produk }}
                     </h6>
-                    <p class="text-muted small mb-2">
-                        Stok: {{ $produk->stok }} {{ $produk->satuan }}
-                    </p>
                     <p class="fw-bold mb-0" style="color: #f59e0b; font-size: 1.1rem;">
                         Rp {{ number_format($produk->harga, 0, ',', '.') }}
-                        <span class="text-muted fw-normal" style="font-size: 0.8rem;">
-                            / {{ $produk->satuan }}
-                        </span>
                     </p>
                 </div>
             </div>

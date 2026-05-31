@@ -40,37 +40,14 @@
                         @enderror
                     </div>
 
-                    <div class="row g-3 mb-3">
-                        <div class="col-6">
-                            <label class="form-label fw-semibold">Harga (Rp)</label>
-                            <input type="number" name="harga"
-                                   class="form-control @error('harga') is-invalid @enderror"
-                                   value="{{ old('harga', $produk->harga) }}"
-                                   placeholder="Contoh: 15000">
-                            @error('harga')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
-                        <div class="col-6">
-                            <label class="form-label fw-semibold">Stok</label>
-                            <input type="number" name="stok"
-                                   class="form-control @error('stok') is-invalid @enderror"
-                                   value="{{ old('stok', $produk->stok) }}"
-                                   placeholder="Contoh: 100">
-                            @error('stok')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
-                    </div>
-
                     <div class="mb-4">
-                        <label class="form-label fw-semibold">Satuan</label>
-                        <input type="text" name="satuan"
-                               class="form-control @error('satuan') is-invalid @enderror"
-                               value="{{ old('satuan', $produk->satuan) }}"
-                               placeholder="Contoh: kg, liter, pcs, bungkus">
-                        @error('satuan')
-                            <div class="invalid-feedback">{{ $message }}</div>
+                        <label class="form-label fw-semibold">Harga (Rp)</label>
+                        <input type="number" name="harga"
+                            class="form-control @error('harga') is-invalid @enderror"
+                            value="{{ old('harga') }}"
+                            placeholder="Contoh: 15000">
+                        @error('harga')
+                        <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
 

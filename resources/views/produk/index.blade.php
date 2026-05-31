@@ -46,10 +46,9 @@
                     <thead style="background-color: #fef3c7;">
                         <tr>
                             <th class="px-4 py-3" style="color: #92400e;">#</th>
-                            <th class="py-3" style="color: #92400e;">Nama Produk</th>
+                            <th class="py-3" style="color: #92400e;">Nama-Produk</th>
                             <th class="py-3" style="color: #92400e;">Kategori</th>
                             <th class="py-3" style="color: #92400e;">Harga</th>
-                            <th class="py-3" style="color: #92400e;">Stok</th>
                             <th class="py-3 text-center" style="color: #92400e;">Aksi</th>
                         </tr>
                     </thead>
@@ -66,9 +65,7 @@
                             </td>
                             <td class="fw-bold" style="color: #f59e0b;">
                                 Rp {{ number_format($produk->harga, 0, ',', '.') }}
-                                <span class="text-muted fw-normal small">/ {{ $produk->satuan }}</span>
                             </td>
-                            <td>{{ $produk->stok }} {{ $produk->satuan }}</td>
                             <td class="text-center">
                                 <a href="{{ route('produk.edit', $produk) }}"
                                    class="btn btn-sm btn-outline-primary me-1">
